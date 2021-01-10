@@ -6,8 +6,7 @@
 
 <!--Get contents of OrCe from forum-->
 <script>
-	fetch("https://scratch.mit.edu/discuss/post/4594238/source/").then(response => response.json()).then(json => { //get the post content
-		let OrCe = json.content.bb; //get only the html
+	fetch("https://scratch.mit.edu/discuss/post/4594238/source/").then(response => response.text()).then(OrCe => { //get the post content
 		let OrCeDiv = document.createElement("div");
                 OrCeDiv.innerHTML = bbcodeParser.bbcodeToHtml(OrCe); //convert bbcode to html. in future, will output to page instead of console
 		//future: add [] escape code, emojis, and ordered lists
@@ -16,8 +15,7 @@
 </script>
 
 <!--Create scratchblocks in case they are used in an order form - line 13: call parser file. line 14: call scratchblock styles file. lines 15-19: set parser settings-->	
-<script src="https://scratchblocks.github.io/js/scratchblocks-v3.4-min.js"></script>	
-<link rel="stylesheet" href="../css/scratchblocks.css">	
+<script src="https://scratchblocks.github.io/js/scratchblocks-v3.4-min.js"></script>
 <script>	
 	scratchblocks.renderMatching('pre.blocks', {	
 		style: 'scratch3', //Optional, defaults to 'scratch2'.	
