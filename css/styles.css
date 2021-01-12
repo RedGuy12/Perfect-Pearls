@@ -80,16 +80,6 @@ nav {
   --hover: #153666;
 }
 
-.search button {
-  border: 2.5px solid var(--hover) !important;
-  color: #ffffffbf;
-}
-
-.search button:hover,
-.search button:active {
-  background-color: var(--hover) !important;
-}
-
 .btn.focus,
 .btn:focus {
   outline: 0;
@@ -102,4 +92,19 @@ main > .container {
 
 img.banner {
   width: 100%;
+}
+
+
+.search button {
+  border: 2.5px solid var(--hover) !important;
+  color: #ffffffbf;
+}
+
+.search button:hover,
+.search button:active {
+  background-color: var(--hover) !important;
+}
+
+.search button:hover:active {
+    box-shadow: 0 0 0 0.2rem rgb(21 54 102 / .5)!important;
 }
