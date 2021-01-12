@@ -3,7 +3,6 @@
 $design["title"]       = "Home";
 $design["description"] = "Scratch Request Disscussion Form shop by @RedGuy7";
 $design["keywords"]    = "home, welcome";
-ob_start(); //lets PHP know to save the html code
 ?>
 <!--add page content here. <body></body> tags are added through the PHP code.-->
 <main role="main" class="flex-shrink-0">
@@ -23,7 +22,3 @@ ob_start(); //lets PHP know to save the html code
 		<h3>Have a great day at Perfect Pearls!!</h3>
 	</div>
 </main>
-
-<?php
-$design['content'] = ob_get_clean(); //saves html code
-require_once "design.php"; //Embeds design.php. See said file
