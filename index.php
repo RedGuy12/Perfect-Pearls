@@ -18,3 +18,4 @@ $design["keywords"]    = "home, welcome";
 <link rel="stylesheet" href="//cdn.scratch.mit.edu/scratchr2/static/__31603c47ef357e5c3cfbc182f95181bb__//djangobb_forum/css/pygments.css">
 <hr>
 <h3>Have a great day at Perfect Pearls!!</h3>
+<?php
