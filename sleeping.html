@@ -16,7 +16,7 @@
 		<script>
 			setInterval(() => { 
 				if(document.hasFocus()) {
-					window.history.back();
+					window.location.href = "https://perfect-pearls.glitch.me" + new URLSearchParams(window.location.search).get('url')
 				}
 			}, 100);
     		</script>
