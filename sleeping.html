@@ -14,9 +14,10 @@
 	<body>
 		<p>You will be redirected back to <a id="link" href="https://perfect-pearls.glitch.me/">https://perfect-pearls.glitch.me/</a> shortly. If you are not, try clicking that link and/or enabling JavaScript.</p>
 		<script>
-			setInterval(() => { 
+			var interval = setInterval(() => { 
 				if(document.hasFocus()) {
-					window.location.href = "https://perfect-pearls.glitch.me" + new URLSearchParams(window.location.search).get('url')
+					clearInterval(interval);
+					window.location.href = "https://perfect-pearls.glitch.me" + new URLSearchParams(window.location.search).get('url');
 				}
 			}, 100);
     		</script>
