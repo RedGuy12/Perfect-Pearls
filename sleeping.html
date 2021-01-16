@@ -14,7 +14,7 @@
 	<body>
 		<p>You will be redirected back to <a id="link" href="https://perfect-pearls.glitch.me/">https://perfect-pearls.glitch.me/</a> shortly. If you are not, try clicking that link and/or enabling JavaScript.</p>
 		<script>
-			setInterval(function(){ 
+			setInterval(() => { 
 				if(document.hasFocus()) {
 					window.addEventListener("focus",()=>window.history.back());
 				}
