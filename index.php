@@ -5,7 +5,7 @@ $design["keywords"]    = "home, welcome";
 ?>
 
 
-<h1 style="text-align: center;">Welcome to Perfect Pearls!</h1>
+<h1>Welcome to Perfect Pearls!</h1>
 <img src="//cdn2.scratch.mit.edu/get_image/project/446970654_9000x7200.png" class="banner">
 <hr>
 <h3>What Are Shops?</h3>
