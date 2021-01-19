@@ -17,9 +17,13 @@
 		<script>
 			var i = setInterval(() => { 
 				if(document.hasFocus()) {
-					var p = new URLSearchParams(window.location.search);
+					var params = new URLSearchParams(window.location.search);
 					clearInterval(i);
-					window.location.href = `https://perfect-pearls.glitch.me${p.get('url')}?y=${p.get('y')}&x=${p.get('x')}`;
+					var paramsArr = Object.fromEntries(new URLSearchParams(location.search));
+					delete paramsArr.url;
+					delete paramsArr.x;
+					delete paramsArr.y;
+					window.location.href = `https://perfect-pearls.glitch.me${params.get('url')}?y=${params.get('y')}&x=${params.get('x')}&${new URLSearchParams(params).toString()}`;
 				}
 			}, 100);
     		</script>
