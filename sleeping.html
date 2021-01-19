@@ -23,7 +23,7 @@
 					delete paramsArr.url;
 					delete paramsArr.x;
 					delete paramsArr.y;
-					window.location.href = `https://perfect-pearls.glitch.me${params.get('url')}?y=${params.get('y')}&x=${params.get('x')}&${new URLSearchParams(params).toString()}`;
+					window.location.href = `https://perfect-pearls.glitch.me${params.get('url')}?y=${params.get('y')}&x=${params.get('x')}&${new URLSearchParams(paramsArr).toString()}`;
 				}
 			}, 100);
     		</script>
