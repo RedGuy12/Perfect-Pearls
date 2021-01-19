@@ -8,23 +8,25 @@
 <script async="false">
 	fetch("https://scratch.mit.edu/discuss/post/4594238/source/").then(response => response.text()).then(OrCe => { //get the post content
 		let OrCeDiv = document.createElement("div");
-                OrCeDiv.innerHTML = bbcodeParser.bbcodeToHtml(OrCe); //convert bbcode to html. in future, will output to page instead of console
+		OrCeDiv.innerHTML = bbcodeParser.bbcodeToHtml(OrCe); //convert bbcode to html.
 		//future: add [] escape code, emojis, and ordered lists
-                document.body.appendChild(OrCeDiv);
-        });
+		document.body.appendChild(OrCeDiv);
+	});
 </script>
 
-<!--Create scratchblocks in case they are used in an order form - line 13: call parser file. line 14: call scratchblock styles file. lines 15-19: set parser settings-->	
+<!--Create scratchblocks in case they are used in an order form - line 13: call parser file. line 14: call scratchblock styles file. lines 15-19: set parser settings-->
 <script async="false" src="https://scratchblocks.github.io/js/scratchblocks-v3.4-min.js"></script>
-<script async="false">	
-	scratchblocks.renderMatching('pre.blocks', {	
-		style: 'scratch3', //Optional, defaults to 'scratch2'.	
-		languages: ['en'], //Optional, defaults to ['en'].	
-		inline: false, //Optional, defaults to false.	
-	});	
+<script async="false">
+	scratchblocks.renderMatching('pre.blocks', {
+		style: 'scratch3'
+	});
 </script>
 
 <!-- code blocks css -->
-<link rel="stylesheet" href="https://cdn.scratch.mit.edu/scratchr2/static/__f4f5f6fe9f78c5d67e8f699f71f746dd__//djangobb_forum/css/pygments.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/highlight.js@10.5.0/src/styles/github-gist.min.css">
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/highlight.js/src/highlight.min.js"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+</script>
 <!-- bbcode css -->
 <link rel="stylesheet" href="../css/bbcode.css">

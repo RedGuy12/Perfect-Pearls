@@ -1,89 +1,106 @@
-a, b, cite {
-	font-weight: bold;
+b {
+	font-weight: bold
 }
 
-.big {
-	font-size: 17px;
+h1 {
+	font-size: 17px
 }
 
 small {
-	font-size: 10px;
+	font-size: 10px
 }
 
 a {
 	color: #4d97ff;
+	font-weight: bold;
 	text-decoration: none;
-	text-shadow: none;
+	text-shadow: none
 }
 
 img {
 	max-width: 100%;
 	border: 0;
-}
-
-img, ul, ol, cite, pre.blocks {
-	padding: 0;
-}
-
-img, cite {
 	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	list-style: none
+}
+
+a {
+	color: #4d97ff;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: none
 }
 
 i {
-	font-style: italic;
+	font-style: italic
 }
 
-a:hover, u {
-	text-decoration: underline;
+.underline {
+	text-decoration: underline
 }
 
 s {
-	text-decoration: line-through;
+	text-decoration: line-through
 }
 
-img, ul, ol, blockquote {
+ul, ol {
+	margin: 0;
+	padding: 0;
 	font-weight: normal;
-}
-
-img, ul, ol, blockquote, pre.blocks {
-	list-style: none;
-}
-
-ul, ol, blockquote, pre:not(.no) {
-	margin: 12px 0;
+	list-style: none
 }
 
 li {
 	list-style-type: disc;
-	margin: 0 0 0 32px;
+	margin: 0 0 0 32px
 }
 
-blockquote, pre:not(.no) {
+blockquote {
 	border-color: #ccc;
 	background-color: #f7f7f7;
+	margin: 12px 0;
 	padding: 12px 20px;
 	border-style: solid;
 	border-width: 1px;
+	font-weight: normal;
+	list-style: none
 }
 
 cite {
+	padding: 0;
 	line-height: 1.4;
 	margin-bottom: 6px;
 	font-style: normal;
 	display: block;
+	margin: 0
 }
 
-pre.blocks {
-	font: bold 10px/1 "Lucida Grande", Verdana, Arial, "DejaVu Sans", sans-serif;
+.center {
+	text-align: center;
+}
+
+.blocks {
+	font: bold 10px/1"Lucida Grande", Verdana, Arial, "DejaVu Sans", sans-serif;
 	margin: 0 0 3px;
 	position: relative;
+	padding: 0;
+	list-style: none
 }
 
-pre:not(.no) {
-	font-size: 0.9em;
+pre code {
+	font-size: .9em;
 	font-family: Menlo, Monaco, Consolas, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+	font-weight: normal;
+	list-style: none;
 	color: #000;
-	background: #fff;
 	max-height: 450px;
 	overflow: auto;
+	border-color: #ccc;
+	background-color: #f7f7f7;
+	margin: 12px 0;
+	padding: 12px 20px;
+	border-style: solid;
+	border-width: 1px;
 }
